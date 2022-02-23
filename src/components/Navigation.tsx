@@ -19,11 +19,11 @@ const Navigation: FunctionComponent<Props> = (props) => {
           closeMenu={closeMenu}
         />
         <NavItem
-          title="Om forløbet"
+          title="Information"
           sectionId="#værkstedsforløb"
           closeMenu={closeMenu}
         />
-        <NavItem title="Link 3" sectionId="#" closeMenu={closeMenu} />
+        <NavItem title="Video" sectionId="#video" closeMenu={closeMenu} />
       </ul>
     </nav>
   );

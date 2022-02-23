@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  @apply bg-body;
+}
+
 h1,
 h2,
 h3,
@@ -46,4 +50,46 @@ p {
   width: 100% !important;
   position: relative !important;
   height: unset !important;
+}
+
+.shape-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.shape-top svg {
+  position: relative;
+  display: block;
+  width: calc(153% + 1.3px);
+  height: 85px;
+}
+
+.shape-top .shape-fill {
+  fill: #fafafa;
+}
+
+.shape-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.shape-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(162% + 1.3px);
+  height: 144px;
+  transform: rotateY(180deg);
+}
+
+.shape-bottom .shape-fill {
+  fill: #fafafa;
 }

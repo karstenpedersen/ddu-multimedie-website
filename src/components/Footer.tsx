@@ -2,11 +2,13 @@ import Wrapper from "./layouts/Wrapper";
 import Logo from "./Logo";
 import * as FaIcons from "react-icons/fa";
 import Socials from "./Socials";
+import ShapeTop from "./shapes/ShapeTop";
 
 const Footer = () => {
   return (
     <footer className="bg-dark text-body">
-      <div className="bg-secondary py-8">
+      <ShapeTop />
+      <div className="bg-secondary pt-32 pb-8">
         <Wrapper className="flex flex-col justify-between text-center md:text-left lg:flex-row">
           <Logo className="h-30 w-52" />
 
