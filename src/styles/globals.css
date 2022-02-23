@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  @apply text-dark;
+}
+
+.title {
+  @apply text-dark mb-4 text-4xl font-bold;
+}
+.subtitle {
+  @apply text-dark mb-4 text-lg font-bold;
+}
+
+.title-bold {
+  @apply font-bold;
+}
+
+.link {
+  @apply text-primary hover:underline;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.image-container > div {
+  position: unset !important;
+}
+
+.image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
