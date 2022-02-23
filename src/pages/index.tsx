@@ -100,11 +100,26 @@ const Home: NextPage = () => {
         </div>
       </Section>
       <Section sectionId="test" className="bg-secondary">
-        <h1 className="title ">Samarbejde mellem HTX og FMS</h1>
+        <h1 className="title ">Video</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vel
           nesciunt totam ex accusantium sapiente dolores deleniti suscipit
           doloribus quos.
+        </p>
+
+        <iframe
+          src="https://www.youtube.com/embed/QwRlt1XyOg0?controls=0"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="mt-10 mb-20 aspect-video w-full shadow-md md:mb-14"
+        ></iframe>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+          repellendus non nostrum aliquid excepturi maiores asperiores quod
+          debitis eum vel.
         </p>
       </Section>
       <Section sectionId="" className="relative">
