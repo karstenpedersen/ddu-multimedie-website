@@ -12,10 +12,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'body': '#fafafa',
-        'dark': '#363e48',
-        'primary': '#dd6543',
-        'secondary': "#e6efc8",
+        'body': "var(--color-body)",
+        'dark': "var(--color-dark)",
+        'primary': 'var(--color-primary)',
+        'secondary': "var(--color-secondary)",
       },
       fontFamily: {
         'display': ['Bebas Neue'],
@@ -23,6 +23,5 @@ module.exports = {
         'body': ['Dancing Script']
       }
     },
-  },
-  plugins: [],
+  }
 }

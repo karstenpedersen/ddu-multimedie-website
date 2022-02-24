@@ -4,12 +4,44 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-primary: #dd6543;
+    --color-secondary: #e6efc8;
+
+    --color-dark: #363e48;
+    --color-body: #fafafa;
+    --color-body-light: #f0f0f0;
+    --color-body-dark: #bababa;
+    --color-body-darker: #a7a7a7;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   @apply bg-body;
+}
+
+body::-webkit-scrollbar {
+  width: 1rem;
+  padding: 16px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--color-body-light);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--color-body-darker);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--color-body-dark);
+  border-radius: 50px;
+  border: 2px solid var(--color-body-light);
 }
 
 h1,
@@ -23,10 +55,10 @@ p {
 }
 
 .title {
-  @apply text-dark mb-4 text-4xl font-bold;
+  @apply mb-4 text-4xl font-bold text-dark;
 }
 .subtitle {
-  @apply text-dark mb-4 text-lg font-bold;
+  @apply mb-4 text-lg font-bold text-dark;
 }
 
 .title-bold {
