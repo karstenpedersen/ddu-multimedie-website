@@ -33,8 +33,8 @@ const Header = () => {
             <Logo className="h-full w-52" />
             <Navigation listClassName="hidden sm:flex gap-8 items-center" />
 
-            <FaIcons.FaGripLines
-              className="text-dark text-3xl sm:hidden"
+            <FaIcons.FaBars
+              className="text-3xl text-dark sm:hidden"
               role="button"
               onClick={() => {
                 handleMobile();
@@ -65,8 +65,8 @@ const Header = () => {
         >
           <div className="flex h-[90px] items-center justify-between">
             <p></p>
-            <FaIcons.FaGripLinesVertical
-              className="text-dark float-right mr-4 text-3xl"
+            <FaIcons.FaTimes
+              className="float-right mr-4 text-3xl text-dark"
               role="button"
               onClick={() => {
                 handleMobile();
