@@ -8,7 +8,7 @@ interface Props {
 }
 
 const Navigation: FunctionComponent<Props> = (props) => {
-  const { className, listClassName, closeMenu = () => {} } = props;
+  const { className, listClassName, closeMenu = () => { } } = props;
 
   return (
     <nav className={className}>
@@ -19,11 +19,12 @@ const Navigation: FunctionComponent<Props> = (props) => {
           closeMenu={closeMenu}
         />
         <NavItem
-          title="Information"
+          title="Om Forløbet"
           sectionId="#værkstedsforløb"
           closeMenu={closeMenu}
         />
-        <NavItem title="Video" sectionId="#video" closeMenu={closeMenu} />
+        <NavItem title="Industri og Ledelse" sectionId="#industri-og-ledelse" closeMenu={closeMenu} />
+        <NavItem title="Besøg os" sectionId="#besøg-os" closeMenu={closeMenu} />
       </ul>
     </nav>
   );
@@ -36,7 +37,7 @@ interface ItemProps {
 }
 
 const NavItem: FunctionComponent<ItemProps> = (props) => {
-  const { title, sectionId, closeMenu = () => {} } = props;
+  const { title, sectionId, closeMenu = () => { } } = props;
 
   return (
     <li className="">

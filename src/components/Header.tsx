@@ -31,10 +31,10 @@ const Header = () => {
         <Wrapper>
           <div className="flex h-full items-center justify-between">
             <Logo className="h-full w-52" />
-            <Navigation listClassName="hidden sm:flex gap-8 items-center" />
+            <Navigation listClassName="hidden lg:flex gap-8 items-center" />
 
             <FaIcons.FaBars
-              className="text-3xl text-dark sm:hidden"
+              className="text-3xl text-dark lg:hidden"
               role="button"
               onClick={() => {
                 handleMobile();

@@ -1,27 +1,27 @@
-import Footer from "components/Footer";
-import IconLink from "components/IconLink";
+import Card from "components/Card";
 import Page from "components/layouts/Page";
 import Section from "components/layouts/Section";
 import PopOutLink from "components/PopOutLink";
-import ProjectCard from "components/ProjectCard";
 import ShapeBottom from "components/shapes/ShapeBottom";
 import ShapeTop from "components/shapes/ShapeTop";
-import { ProjectData } from "data/Project.data";
 import type { NextPage } from "next";
 import Image from "next/image";
 import * as FaIcons from "react-icons/fa";
 import elementImage from "../../public/images/element.png";
+import image1 from "../../public/images/image1.jpg";
+import image2 from "../../public/images/image2.png";
+import image3 from "../../public/images/image3.png";
 
 const Home: NextPage = () => {
   return (
     <Page title="Fredericia Maskinmesterskole">
       <Section sectionId="home" className="relative">
         <h1 className="title ">Værkstedsforløbet</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vel
-          nesciunt totam ex accusantium sapiente dolores deleniti suscipit
-          doloribus quos.
+        <p className="max-w-lg mb-3">
+          Hos FMS kan du læse til maskinmester i Fredericia, Esbjerg og Sønderborg.
+          Hvis du kommer hertil med en gymnasiel baggrund skal du gennem vores værkstedsforløb, for at du er klar til at læse til maskinmester.
         </p>
+        <p>Dette kan du læse mere om på denne side.</p>
 
         <iframe
           src="https://www.youtube.com/embed/sFZjqVnWBhc?controls=0"
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
           className="mt-10 mb-20 aspect-video w-full shadow-md md:mb-14"
-        ></iframe>
+        />
 
         <PopOutLink text="Læs mere" path="#værkstedsforløb" />
 
@@ -41,9 +41,7 @@ const Home: NextPage = () => {
       <Section sectionId="værkstedsforløb">
         <h1 className="title ">Om forløbet</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vel
-          nesciunt totam ex accusantium sapiente dolores deleniti suscipit
-          doloribus quos.
+          Gennem værkstedsforløbet vil du lærer at arbejde selvstændigt i et værksted, hvor du vil fremstille forskellige produkter. I forløbet læreres teorien og den afprøves undervejs nede i vores værksted.
         </p>
 
         <div id="sub-todo" className="mt-10">
@@ -106,13 +104,11 @@ const Home: NextPage = () => {
       <ShapeTop />
 
       <Section className="bg-secondary pb-60">
-        <h1 id="video" className="title pt-10">
-          Video
+        <h1 id="industri-og-ledelse" className="title pt-10">
+          Industri og ledelse
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vel
-          nesciunt totam ex accusantium sapiente dolores deleniti suscipit
-          doloribus quos.
+          For dig, der har et ønske om et lederjob i større virksomheder inden for energi, forsyning, produktion eller service. Linjen er udarbejdet i samarbejde med industrien i Trekantområdet.
         </p>
 
         <iframe
@@ -122,23 +118,24 @@ const Home: NextPage = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
           className="mt-10 mb-20 aspect-video w-full shadow-md md:mb-14"
-        ></iframe>
+        />
 
+        <p className="subtitle">Hvad du vil opnå</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-          repellendus non nostrum aliquid excepturi maiores asperiores quod
-          debitis eum vel.
+          Kombinationen af teknisk kompetence og en bred viden om sikkerhed, kvalitet, arbejdsmiljø, naturmiljø, økonomi og ledelse, giver mulighed for lederstillinger og job, hvor du bliver bindeleddet mellem leverandører, myndigheder, produktion og kunder.
         </p>
       </Section>
+
       <ShapeBottom />
 
-      <Section sectionId="" className="relative">
-        <h1 className="title ">Samarbejde mellem HTX og FMS</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vel
-          nesciunt totam ex accusantium sapiente dolores deleniti suscipit
-          doloribus quos.
-        </p>
+      <Section sectionId="besøg-os" className="relative">
+        <h1 className="title ">Kom og besøg os</h1>
+        <p className="max-w-lg">Du er meget velkommen til at besøge skolen, så vi kan vise dig rundt og fortælle endnu mere om studiet og om studielivet på FMS. <a href="https://fms.dk/p/bliv-studerende/maskinmester/studievejledning" className="link">Kontakt en studievejleder</a> på den afdeling, du gerne vil besøge, og aftal en tid.</p>
+        <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 md:grid-rows-1 mb-10">
+          <Card title="Studerende på FMS" description="Studerende er i gang med planlægning." image={image1} />
+          <Card title="Værkstedet er klar!" description="Nye maskiner er opstillet i værkstedet." image={image2} />
+          <Card title="Værkstedet i brug" description="Værkstedet er i fuld brug af nye elever." image={image3} />
+        </div>
       </Section>
     </Page>
   );
