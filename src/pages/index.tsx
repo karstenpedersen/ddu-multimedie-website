@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         <p>Dette kan du læse mere om på denne side.</p>
 
         <iframe
-          src="https://www.youtube.com/embed/sFZjqVnWBhc?controls=0"
+          src="https://www.youtube.com/embed/RhrDqU3R5_I"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -112,7 +112,7 @@ const Home: NextPage = () => {
         </p>
 
         <iframe
-          src="https://www.youtube.com/embed/QwRlt1XyOg0?controls=0"
+          src="https://www.youtube.com/embed/xg_s8F52b7g"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -130,7 +130,7 @@ const Home: NextPage = () => {
 
       <Section sectionId="besøg-os" className="relative">
         <h1 className="title ">Kom og besøg os</h1>
-        <p className="max-w-lg">Du er meget velkommen til at besøge skolen, så vi kan vise dig rundt og fortælle endnu mere om studiet og om studielivet på FMS. <a href="https://fms.dk/p/bliv-studerende/maskinmester/studievejledning" className="link">Kontakt en studievejleder</a> på den afdeling, du gerne vil besøge, og aftal en tid.</p>
+        <p className="max-w-lg">Du er meget velkommen til at besøge skolen, så vi kan vise dig rundt og fortælle endnu mere om studiet og om studielivet på FMS. <a href="https://fms.dk/p/bliv-studerende/maskinmester/studievejledning" target="_blank" rel="noreferrer" className="link">Kontakt en studievejleder</a> på den afdeling, du gerne vil besøge, og aftal en tid.</p>
         <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 md:grid-rows-1 mb-10">
           <Card title="Studerende på FMS" description="Studerende er i gang med planlægning." image={image1} />
           <Card title="Værkstedet er klar!" description="Nye maskiner er opstillet i værkstedet." image={image2} />

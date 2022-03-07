@@ -52,7 +52,7 @@ const Footer = () => {
         </Wrapper>
       </div>
 
-      <Wrapper className="flex items-center justify-between py-5 text-xl">
+      <Wrapper className="flex items-center justify-between gap-4 py-5 text-xl flex-col md:flex-row flex-col-reverse">
         <p className="text-inherit">EAN: 5798000023154 // CVR: 13002738</p>
         <Socials
           className="flex items-center justify-between gap-3 text-2xl"
